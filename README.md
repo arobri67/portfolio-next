@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is my Nextjs starter project (10/12/2024)
 
-## Getting Started
+What is included:
 
-First, run the development server:
+## Shadcn/UI
+I just setup with shadcn/ui and added a button component
+- Button
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## TailwindCSS
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- font-serif, font-sans and container
+## ESLint Rules
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Using `antfu` ESLint configuration which includes (it will also format the code):
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Base Rules
+- Uses `eslint:recommended` as the foundation
+- Enforces strict TypeScript rules
+- Includes `eslint-plugin-import` rules
 
-## Learn More
+### Style Rules
+- Double quotes for strings (customized)
+- Semicolons required (customized)
+- Comma dangle for multiline
+- 2 spaces indentation
+- No unused imports
+- Enforces consistent spacing
+- Enforces consistent line breaks
+- Brace style must be "1tbs" (one true brace style)
 
-To learn more about Next.js, take a look at the following resources:
+### TypeScript Specific
+- Strict type checking
+- Consistent type imports
+- No explicit `any`
+- Enforces explicit return types on functions
+- Use `type` instead of `interface` for type definitions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Import/Export Rules
+- Ordered imports
+- No duplicate imports
+- No mutable exports
+- Consistent import type
+- Import sorting with internal patterns (@/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Framework & Tools
+- Next.js specific rules and core web vitals
+- JSX accessibility rules (jsx-a11y)
+- Tailwind CSS rules
+- React hooks rules
 
-## Deploy on Vercel
+### Code Quality
+- No console statements (warning)
+- No top-level await
+- No process.env usage (must use configuration system)
+- File names must be in kebab-case (except README.md)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### File Support
+ESLint is configured to validate:
+- JavaScript/TypeScript
+- React/JSX
+- HTML/CSS
+- JSON/YAML
+- Markdown
+- And more...
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+For more details, visit [antfu/eslint-config](https://github.com/antfu/eslint-config)
