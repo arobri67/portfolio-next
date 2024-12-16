@@ -1,6 +1,7 @@
 import { IconMenuDeep } from "@tabler/icons-react";
 import Link from "next/link";
 
+import { Logo } from "./logo";
 import { Sheet, SheetContent, SheetDescription, SheetTitle, SheetTrigger } from "./ui";
 
 type LinkType = {
@@ -13,19 +14,15 @@ export const MobileNav = ({ links }: { links: LinkType[] }) => {
     <div className="flex items-center md:hidden">
       <Sheet>
         <SheetTrigger>
-          <IconMenuDeep className="size-6 text-primary" />
+          <IconMenuDeep className="size-6 text-foreground" />
         </SheetTrigger>
-
         <SheetContent className="flex flex-col">
           <SheetDescription />
           {/* logo */}
           <SheetTitle asChild>
-            <div className="mb-20 mt-32 text-center text-xl">
+            <div className="mb-20 mt-32 flex justify-center text-xl">
               <Link href="/">
-                <h1 className="text-4xl font-semibold">
-                  arnaudobri
-                  <span className="text-primary">.com</span>
-                </h1>
+                <Logo />
               </Link>
             </div>
           </SheetTitle>

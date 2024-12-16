@@ -1,18 +1,12 @@
 import type { Metadata } from "next";
 
-import { Inter, Playfair } from "next/font/google";
-
 import "./globals.css";
 
+import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { Providers } from "@/components/providers";
+import { inter, josefinSans } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-const playfair = Playfair({
-  subsets: ["latin"],
-  variable: "--font-serif",
-});
 
 export const metadata: Metadata = {
   title: "Arnaud Portfolio - irbo.net",
@@ -28,14 +22,15 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "flex min-h-screen flex-col font-sans antialiased",
+          "flex min-h-screen flex-col antialiased font-sans-inter",
           inter.variable,
-          playfair.variable,
+          josefinSans.variable,
         )}
       >
         <Providers>
           <Header />
           <main className="grow">{children}</main>
+          <Footer />
         </Providers>
       </body>
     </html>

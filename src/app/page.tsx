@@ -1,7 +1,13 @@
+import { Intro } from "@/components/hero-app/hero";
+import { RecentProjects } from "@/components/projects-app/recent-projects";
+
 export default function Home() {
   return (
-    <div>
-
-    </div>
+    <section className="bg-background py-24">
+      <div className="container max-w-3xl">
+        <Intro />
+        <RecentProjects />
+      </div>
+    </section>
   );
 }
