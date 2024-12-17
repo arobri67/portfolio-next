@@ -1,7 +1,7 @@
 import { IconArrowLeft } from "@tabler/icons-react";
 import Link from "next/link";
 
-import { Projects } from "@/components/project-list";
+import { ProjectList } from "@/components/project-list";
 import { getProjects } from "@/lib/projects";
 
 export default async function ProjectsPage() {
@@ -17,7 +17,7 @@ export default async function ProjectsPage() {
           <IconArrowLeft className="size-5" />
           <span>Back to homepage</span>
         </Link>
-        <Projects projects={projects} />
+        <ProjectList projects={projects} />
       </div>
     </section>
   );

@@ -42,12 +42,13 @@ export default async function Project({
         </Link>
 
         {image && (
-          <div className="relative mb-6 h-96 w-full overflow-hidden rounded-lg">
+          <div className="relative mb-6 flex w-full items-center justify-center rounded-lg">
             <Image
-              src={image}
+              src={`https://utfs.io/a/uo6z56scs7/${image}`}
               alt={title || ""}
-              className="object-cover"
-              fill
+              className="object-contain"
+              width={350}
+              height={250}
             />
           </div>
         )}

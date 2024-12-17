@@ -5,16 +5,16 @@ import type { ProjectMetadata } from "@/lib/projects";
 
 import { formatDate } from "@/lib/utils";
 
-export const Projects = ({ projects }: { projects: ProjectMetadata[] }) => {
+export const ProjectList = ({ projects }: { projects: ProjectMetadata[] }) => {
   return (
     <ul className="grid grid-cols-1 gap-8 sm:grid-cols-2">
       {projects.map(project => (
         <li key={project.slug} className="group relative">
           <Link href={`/projects/${project.slug}`}>
             {project.image && (
-              <div className="h-72 w-full overflow-hidden bg-muted sm:h-60">
+              <div className="h-72 w-full overflow-hidden rounded-lg bg-muted sm:h-60">
                 <Image
-                  src={project.image}
+                  src={`https://utfs.io/a/uo6z56scs7/${project.image}`}
                   alt={project.title || ""}
                   fill
                   className="rounded-lg object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -22,16 +22,16 @@ export const Projects = ({ projects }: { projects: ProjectMetadata[] }) => {
               </div>
             )}
 
-            <div className="absolute inset-px rounded-lg bg-background/70 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+            <div className="absolute inset-px rounded-lg bg-slate-600/80 opacity-10 transition-opacity duration-500 group-hover:opacity-100" />
 
             <div className="absolute inset-x-0 bottom-0 translate-y-2 px-6 py-5 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
-              <h2 className="title line-clamp-1 text-xl no-underline">
+              <h2 className="title line-clamp-1 text-2xl text-slate-100">
                 {project.title}
               </h2>
-              <p className="line-clamp-1 text-sm text-muted-foreground">
+              <p className="line-clamp-1 text-sm text-slate-300">
                 {project.summary}
               </p>
-              <p className="text-xs font-light text-muted-foreground">
+              <p className="text-xs font-light  text-slate-300">
                 {formatDate(project.publishedAt ?? "")}
               </p>
             </div>

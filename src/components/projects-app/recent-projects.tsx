@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { getProjects } from "@/lib/projects";
 
-import { Projects } from "../project-list";
+import { ProjectList } from "../project-list";
 
 export const RecentProjects = async () => {
   const projects = await getProjects(4);
@@ -12,7 +12,7 @@ export const RecentProjects = async () => {
       <div>
         <h2 className="title mb-12 text-foreground/70">Recent Projects</h2>
 
-        <Projects projects={projects} />
+        <ProjectList projects={projects} />
 
         <Link
           href="/projects"
