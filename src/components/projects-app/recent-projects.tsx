@@ -13,12 +13,10 @@ export const RecentProjects = async () => {
       <div>
         <div className="mb-10 flex flex-row items-center gap-4">
           <h2 className="title whitespace-nowrap text-foreground/70">Recent Projects</h2>
-          <Separator decorative className="flex-1" />
+          <Separator decorative className="hidden md:block md:flex-1" />
         </div>
-
         <div>
           <ProjectList projects={projects} />
-
           <Link
             href="/projects"
             className="mt-8 inline-flex items-center gap-2 text-muted-foreground underline decoration-1 underline-offset-2 transition-colors hover:text-foreground"
@@ -26,7 +24,6 @@ export const RecentProjects = async () => {
             <span>All projects</span>
           </Link>
         </div>
-
       </div>
     </section>
   );
