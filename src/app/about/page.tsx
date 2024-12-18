@@ -6,7 +6,7 @@ import { SectionSeparator } from "@/components/section-separator";
 export default function AboutPage() {
   return (
     <section className="py-24">
-      <div className="container max-w-3xl">
+      <div className="container mx-auto max-w-3xl">
         <div>
           <SectionSeparator title="A look at my journey" />
           <AboutText />

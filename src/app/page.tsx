@@ -8,7 +8,7 @@ export default function Home() {
       <div className="container max-w-3xl">
         <Intro />
         <RecentProjects />
-        <Contact />
+        <Contact header />
       </div>
     </section>
   );
