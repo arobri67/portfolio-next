@@ -24,7 +24,7 @@ const tools: Tool[] = [
 
 export const Toolbox = () => {
   return (
-    <div className="flex flex-wrap gap-3 md:flex-nowrap md:gap-1">
+    <article className="mb-10 flex flex-wrap gap-3 md:flex-nowrap md:gap-1">
       {tools.map(tool => (
         <div
           key={tool.id}
@@ -36,13 +36,13 @@ export const Toolbox = () => {
           {/* Tool content */}
           <div className="flex h-full flex-row justify-between p-4 transition-all duration-300 ease-in-out group-hover:py-3 md:flex-col md:px-2 md:py-8 md:group-hover:py-6">
             <div className="relative flex flex-1 items-center md:block md:h-full">
-              {/* Icon */}
-              <div className="text-foreground/60 transition-all duration-300 ease-in-out group-hover:rotate-0 group-hover:scale-110 group-hover:text-foreground md:absolute md:left-1/2 md:top-3/4 md:-translate-x-1/2 md:-translate-y-1/2 md:rotate-90">
-                {tool.icon}
-              </div>
               {/* Text */}
               <div className="ml-3 whitespace-nowrap text-lg font-semibold text-foreground/60 transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:text-foreground md:absolute md:inset-x-0 md:left-1/2 md:top-[10%] md:ml-0 md:-translate-x-1/2 md:-translate-y-1/2 md:rotate-90 md:text-base">
                 {tool.name}
+              </div>
+              {/* Icon */}
+              <div className="text-foreground/60 transition-all duration-300 ease-in-out group-hover:rotate-0 group-hover:scale-110 group-hover:text-foreground md:absolute md:left-1/2 md:top-3/4 md:-translate-x-1/2 md:-translate-y-1/2 md:rotate-90">
+                {tool.icon}
               </div>
             </div>
 
@@ -53,6 +53,6 @@ export const Toolbox = () => {
           </div>
         </div>
       ))}
-    </div>
+    </article>
   );
 };

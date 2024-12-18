@@ -8,9 +8,7 @@ export const AboutText = () => {
         ello! I am Arnaud Obri. For the last
         {" "}
         <span className="bg-gradient-to-r from-primary to-secondary px-1 font-medium">10 years</span>
-
-        , I
-        have dedicated my time to
+        , I have dedicated my time to
         {" "}
         <span className="bg-gradient-to-r from-primary to-secondary px-1">research in life sciences</span>
         ,
@@ -22,7 +20,8 @@ export const AboutText = () => {
         {" "}
         to new technologies. I&apos;m proud to have contributed to over
         {" "}
-        <span className="bg-gradient-to-r from-primary to-secondary px-1 font-medium">20 publications</span>
+        <a href="https://scholar.google.com/citations?user=KmLFMs4AAAAJ&hl=en&oi=ao"><span className="bg-gradient-to-r from-primary to-secondary px-1 font-medium underline">20 publications</span></a>
+
         {" "}
         in
         the scientific community and to have worked with brilliant minds in

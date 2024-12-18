@@ -1,10 +1,11 @@
 import { AboutText } from "@/components/about-app/about-text";
+import { BeyondCode } from "@/components/about-app/beyond-code";
 import { Toolbox } from "@/components/about-app/toolbox";
 import { SectionSeparator } from "@/components/section-separator";
 
 export default function AboutPage() {
   return (
-    <section className="py-24 pt-40">
+    <section className="py-24">
       <div className="container max-w-3xl">
         <div>
           <SectionSeparator title="A look at my journey" />
@@ -13,6 +14,10 @@ export default function AboutPage() {
         <div>
           <SectionSeparator title="My toolbox" />
           <Toolbox />
+        </div>
+        <div>
+          <SectionSeparator title="Beyond code" />
+          <BeyondCode />
         </div>
       </div>
     </section>

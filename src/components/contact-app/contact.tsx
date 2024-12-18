@@ -27,7 +27,7 @@ const SOCIALS: SocialLink[] = [
 export const Contact = () => {
   return (
     <section>
-      <div className="rounded-lg border p-10">
+      <div className="rounded-lg border bg-muted/10 p-10">
         <div className="flex flex-col items-start justify-between md:flex-row md:items-center md:space-x-6">
           <div className="mb-2 flex flex-row items-center gap-2 ">
             <IconMail className="size-8 text-foreground/70" />

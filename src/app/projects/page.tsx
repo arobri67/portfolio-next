@@ -8,7 +8,7 @@ import { getProjects } from "@/lib/projects";
 export default async function ProjectsPage() {
   const projects = await getProjects();
   return (
-    <section className="pb-24 pt-40">
+    <section className="py-24">
       <div className="container max-w-3xl">
         <SectionSeparator title="Projects" />
         <Link
