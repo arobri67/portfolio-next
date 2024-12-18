@@ -8,7 +8,7 @@ export const Intro = () => {
     = "https://utfs.io/a/uo6z56scs7/G8reinZKvneWd6Krj2GGBZbTmM4lrepXnAuicF8KODhaIEHj";
 
   return (
-    <section className="flex flex-col-reverse  items-center gap-x-10 gap-y-4 pb-20 md:flex-row">
+    <section className="flex flex-col-reverse items-center gap-x-10 gap-y-4 pb-12 md:flex-row">
       <div className="mt-2 flex-1 md:mt-0">
         <h1 className="title title-gradient font-bold">
           Hi, I&apos;m

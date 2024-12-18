@@ -27,7 +27,7 @@ export const Header = () => {
         <ul className="hidden items-center gap-6 text-sm font-light text-muted-foreground md:flex">
           {LINKS.map(link => (
             <li
-              className="capitalize underline-offset-8 hover:text-primary hover:underline"
+              className="rounded-lg px-2 py-1 capitalize hover:bg-primary/10 hover:text-primary"
               key={link.href}
             >
               <Link href={link.href}>{link.label}</Link>

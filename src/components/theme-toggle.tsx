@@ -20,7 +20,7 @@ export const ThemeToggle = () => {
 
   return (
     <Button
-      className="hover:bg-transparent"
+      className="rounded-lg hover:bg-primary/10"
       size="sm"
       variant="ghost"
       onClick={() => {
