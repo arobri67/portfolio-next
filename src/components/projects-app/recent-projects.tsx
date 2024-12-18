@@ -2,8 +2,8 @@ import Link from "next/link";
 
 import { getProjects } from "@/lib/projects";
 
-import { ProjectList } from "../project-list";
 import { Separator } from "../ui";
+import { ProjectList } from "./project-list";
 
 export const RecentProjects = async () => {
   const projects = await getProjects(4);

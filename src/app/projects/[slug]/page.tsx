@@ -46,9 +46,9 @@ export default async function Project({
             <Image
               src={`https://utfs.io/a/uo6z56scs7/${image}`}
               alt={title || ""}
-              className="object-contain"
-              width={350}
-              height={250}
+              className="rounded-lg object-contain"
+              width={550}
+              height={400}
             />
           </div>
         )}

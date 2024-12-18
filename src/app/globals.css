@@ -132,7 +132,7 @@
     @apply bg-background text-foreground font-sans-inter;
   }
   .title {
-    @apply font-sans-josefin text-3xl font-semibold md:text-4xl;
+    @apply font-sans-josefin text-3xl font-semibold md:text-4xl tracking-tight;
   }
 
   .title-gradient {
