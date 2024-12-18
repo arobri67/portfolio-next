@@ -13,9 +13,9 @@ export default antfu({
     quotes: "double",
     semi: true,
   },
-  formatters: {
-    css: true,
-  },
+  // formatters: {
+  //   css: true,
+  // },
 
   ignores: ["migrations/**/*", "next-env.d.ts"],
 }, ...tailwind.configs["flat/recommended"], jsxA11y.flatConfigs.recommended, {
@@ -36,6 +36,7 @@ export default antfu({
     "perfectionist/sort-imports": ["error", {
       internalPattern: ["^@/"],
     }],
+
     // to see
     "style/brace-style": ["error", "1tbs"], // Use the default brace style
     "ts/consistent-type-definitions": ["error", "type"], // Use `type` instead of `interface`

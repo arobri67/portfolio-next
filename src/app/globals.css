@@ -5,64 +5,6 @@
 
 
 @layer base {
-  /* PURPLE THEME */
-  /* :root {
-    --background: 0.00 0.00% 99.61%;
-    --foreground: 249.23 44.83% 5.69%;
-    --primary: 249.05 57.27% 56.86%;
-    --primary-foreground: 250.00 54.55% 95.69%;
-    --card: 248.57 63.64% 97.84%;
-    --card-foreground: 249.23 44.83% 5.69%;
-    --popover: 0.00 0.00% 100.00%;
-    --popover-foreground: 249.23 44.83% 5.69%;
-    --secondary: 249.47 57.58% 93.53%;
-    --secondary-foreground: 0.00 0.00% 0.00%;
-    --muted: 250.00 54.55% 95.69%;
-    --muted-foreground: 0.00 0.00% 40.00%;
-    --accent: 250.00 54.55% 95.69%;
-    --accent-foreground: 249.47 44.19% 8.43%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 249.23 59.09% 91.37%;
-    --input: 248.00 16.48% 82.16%;
-    --ring: 249.05 57.27% 56.86%;
-    --chart-1: 249.05 57.27% 56.86%;
-    --chart-2: 248.97 57.22% 63.33%;
-    --chart-3: 248.89 56.64% 71.96%;
-    --chart-4: 248.70 57.02% 76.27%;
-    --chart-5: 249.47 57.58% 80.59%;
-    --radius: 0.5rem;
-  }
-
-  .dark {
-    --background: 223.64 47.83% 4.51%;
-    --foreground: 249.47 57.58% 93.53%;
-    --primary: 249.05 57.27% 56.86%;
-    --primary-foreground: 250.00 54.55% 95.69%;
-    --card: 224.00 48.39% 6.08%;
-    --card-foreground: 249.47 57.58% 93.53%;
-    --popover: 0.00 0.00% 0.00%;
-    --popover-foreground: 249.47 57.58% 93.53%;
-    --secondary: 248.18 43.14% 20.00%;
-    --secondary-foreground: 0.00 0.00% 100.00%;
-    --muted: 0.00 0.00% 9.80%;
-    --muted-foreground: 0.00 0.00% 50.20%;
-    --accent: 248.18 43.14% 20.00%;
-    --accent-foreground: 249.47 57.58% 93.53%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 249.23 44.83% 11.37%;
-    --input: 249.23 12.38% 20.59%;
-    --ring: 249.05 57.27% 56.86%;
-    --chart-1: 249.05 57.27% 56.86%;
-    --chart-2: 248.97 43.32% 48.43%;
-    --chart-3: 249.51 43.62% 36.86%;
-    --chart-4: 249.57 43.40% 31.18%;
-    --chart-5: 248.42 43.51% 25.69%;
-    --radius: 0.5rem;
-  } */
-
-  
   :root {
   --background: 220 16% 96%;
   --foreground: 222 20% 16%;
@@ -118,10 +60,6 @@
     --chart-5: 222.86 8.75% 31.37%;
     --radius: 0.5rem;
   }
-
-
-    
-
 }
 
 @layer base {
@@ -138,5 +76,4 @@
   .title-gradient {
     @apply bg-gradient-to-r from-ring to-foreground bg-clip-text text-transparent;
   }
-
 }

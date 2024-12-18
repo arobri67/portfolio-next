@@ -1,6 +1,6 @@
 export const AboutText = () => {
   return (
-    <article className="space-y-6">
+    <article className="mb-10 space-y-6">
       <p className="hyphens-auto text-base leading-relaxed tracking-wider text-foreground/80">
         <span className="float-left mr-1 rounded bg-gradient-to-r from-primary to-secondary px-3 py-2 text-2xl font-bold text-foreground">
           H
