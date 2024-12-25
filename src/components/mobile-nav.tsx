@@ -16,14 +16,14 @@ export const MobileNav = ({ links }: { links: LinkType[] }) => {
         <SheetTrigger>
           <IconMenuDeep className="size-6 text-foreground" />
         </SheetTrigger>
-        <SheetContent className="flex flex-col">
+        <SheetContent side="right" className="flex flex-col">
           <SheetDescription />
           {/* logo */}
           <SheetTitle asChild>
             <div className="mb-20 mt-32 flex justify-center text-xl">
-              <Link href="/">
-                <Logo />
-              </Link>
+
+              <Logo />
+
             </div>
           </SheetTitle>
           {/* nav */}

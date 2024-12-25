@@ -2,7 +2,7 @@ import { Logo } from "./logo";
 
 export const Footer = () => {
   return (
-    <footer className="py-8">
+    <footer className="border-t border-border py-8">
       <div className="container max-w-3xl">
         <div className="md:flex md:items-center md:justify-between">
           <div className="order-2">

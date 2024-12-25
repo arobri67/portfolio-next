@@ -17,7 +17,7 @@ export default antfu({
   //   css: true,
   // },
 
-  ignores: ["migrations/**/*", "next-env.d.ts"],
+  ignores: ["migrations/**/*", "next-env.d.ts", "src/components/ui/**/*"],
 }, ...tailwind.configs["flat/recommended"], jsxA11y.flatConfigs.recommended, {
   plugins: {
     "@next/next": nextPlugin,
