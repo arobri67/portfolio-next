@@ -5,7 +5,7 @@ import { Button } from "../ui";
 
 export const Intro = () => {
   const imgMe
-    = "https://utfs.io/a/uo6z56scs7/G8reinZKvneWd6Krj2GGBZbTmM4lrepXnAuicF8KODhaIEHj";
+    = "https://utfs.io/a/uo6z56scs7/G8reinZKvneWZEg4GTQGqk4w39enRh7t6U2gl0cdSbzxIma8";
 
   return (
     <section className="flex flex-col-reverse items-center gap-x-10 gap-y-4 pb-12 md:flex-row">
