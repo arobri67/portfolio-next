@@ -9,8 +9,8 @@ import { inter, josefinSans } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Arnaud Portfolio - irbo.net",
-  description: "Welcome to my portfolio",
+  title: "Arnaud's Personal Website",
+  description: "Welcome to my personal website",
 };
 
 export default function RootLayout({
