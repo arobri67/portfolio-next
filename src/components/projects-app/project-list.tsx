@@ -7,6 +7,7 @@ import { formatDate } from "@/lib/utils";
 
 export const ProjectList = ({ projects }: { projects: ProjectMetadata[] }) => {
   return (
+
     <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2">
       {projects.map(project => (
         <li key={project.slug} className="group relative">
