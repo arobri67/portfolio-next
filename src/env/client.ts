@@ -14,6 +14,7 @@ export const env = createEnv({
     NEXT_PUBLIC_LINKEDIN_URL: z.string().url(),
     NEXT_PUBLIC_TWITTER_URL: z.string().url(),
     NEXT_PUBLIC_SCHOLAR_URL: z.string().url(),
+    NEXT_PUBLIC_IMG_404: z.string().url(),
   },
   // Called when the schema validation fails.
   onValidationError: (error: ZodError) => {
@@ -33,6 +34,7 @@ export const env = createEnv({
     NEXT_PUBLIC_LINKEDIN_URL: process.env.NEXT_PUBLIC_LINKEDIN_URL,
     NEXT_PUBLIC_TWITTER_URL: process.env.NEXT_PUBLIC_TWITTER_URL,
     NEXT_PUBLIC_SCHOLAR_URL: process.env.NEXT_PUBLIC_SCHOLAR_URL,
+    NEXT_PUBLIC_IMG_404: process.env.NEXT_PUBLIC_IMG_404,
   },
   emptyStringAsUndefined: true,
 });
