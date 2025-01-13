@@ -76,4 +76,12 @@
   .title-gradient {
     @apply bg-gradient-to-r from-ring to-foreground bg-clip-text text-transparent;
   }
+
+  .about-text {
+    @apply hyphens-auto text-base leading-relaxed tracking-wider text-foreground/80;
+  }
+
+  .underline-gradient {
+    @apply bg-gradient-to-r from-primary to-secondary font-medium px-0.5;
+  }
 }

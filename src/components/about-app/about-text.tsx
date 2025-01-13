@@ -1,62 +1,54 @@
+import { env } from "@/env/client";
+
+import { HighlightText } from "../highlight-text";
+import { HighlightedLetter } from "../highlighted-letter";
+
 export const AboutText = () => {
   return (
     <article className="mb-10 space-y-6">
-      <p className="hyphens-auto text-base leading-relaxed tracking-wider text-foreground/80">
-        <span className="float-left mr-1 rounded bg-gradient-to-r from-primary to-secondary px-3 py-2 text-2xl font-bold text-foreground">
-          H
-        </span>
+      <p className="about-text">
+        <HighlightedLetter letter="H" />
         ello! I am Arnaud Obri. For the last
-        {" "}
-        <span className="bg-gradient-to-r from-primary to-secondary px-1 font-medium">10 years</span>
-        , I have dedicated my time to
-        {" "}
-        <span className="bg-gradient-to-r from-primary to-secondary px-1">research in life sciences</span>
-        ,
+        <HighlightText>10 years,</HighlightText>
+        I have dedicated my time to
+        <HighlightText>research in life sciences,</HighlightText>
         which has led me to acquire multiple skills such as
-        {" "}
-        <span className="bg-gradient-to-r from-primary to-secondary px-1 font-medium">
+        <HighlightText>
           data analysis, problem-solving, and adaptability
-        </span>
-        {" "}
+        </HighlightText>
         to new technologies. I&apos;m proud to have contributed to over
-        {" "}
-        <a href="https://scholar.google.com/citations?user=KmLFMs4AAAAJ&hl=en&oi=ao"><span className="bg-gradient-to-r from-primary to-secondary px-1 font-medium underline">20 publications</span></a>
-
-        {" "}
-        in
-        the scientific community and to have worked with brilliant minds in
+        <a href={env.NEXT_PUBLIC_SCHOLAR_URL}><HighlightText>20 publications</HighlightText></a>
+        in the scientific community and to have worked with brilliant minds in
         different institutions.
       </p>
-      <p className="hyphens-auto text-base leading-relaxed tracking-wider text-foreground/80">
+      <p className="about-text">
         I&apos;m
-        {" "}
-        <span className="bg-gradient-to-r from-primary to-secondary px-1">
-          transitioning my career into software development
-        </span>
-        . Back in the 2000s, when I was a student, I started learning HTML, CSS.
+        <HighlightText>
+          transitioning my career into software development.
+        </HighlightText>
+        Back in the 2000s, when I was a student, I started learning HTML, CSS.
         Today, I&apos;m rekindling that passion, constantly
-        {" "}
-        <span className="bg-gradient-to-r from-primary to-secondary px-1">learning and growing</span>
-        {" "}
+
+        <HighlightText>learning and growing</HighlightText>
+
         in this
         dynamic digital world.
       </p>
-      <p className="hyphens-auto text-base leading-relaxed tracking-wider text-foreground/80">
+      <p className="about-text">
         I live in
-        {" "}
-        <span className="bg-gradient-to-r from-primary to-secondary px-1">Barcelona </span>
+
+        <HighlightText>Barcelona</HighlightText>
         , with my
         family, but I was born and raised in
-        {" "}
-        <span className="bg-gradient-to-r from-primary to-secondary px-1">Strasbourg</span>
-        , France, where I
+
+        <HighlightText>Strasbourg,</HighlightText>
+        France, where I
         spent most of my time. I&apos;ve also had the experience of living in
-        {" "}
-        <span className="bg-gradient-to-r from-primary to-secondary px-1">New York</span>
-        , adding to my
+
+        <HighlightText>New York,</HighlightText>
+        adding to my
         international perspective.
       </p>
-
     </article>
   );
 };

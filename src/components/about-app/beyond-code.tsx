@@ -54,6 +54,36 @@ const HOBBIES = [
     left: "5%",
     top: "70%",
   },
+  {
+    title: "Photography",
+    emoji: "📸",
+    left: "20%",
+    top: "30%",
+  },
+  {
+    title: "Reading",
+    emoji: "📚",
+    left: "70%",
+    top: "10%",
+  },
+  {
+    title: "Cooking",
+    emoji: "👨‍🍳",
+    left: "80%",
+    top: "70%",
+  },
+  {
+    title: "Chess",
+    emoji: "♟️",
+    left: "30%",
+    top: "10%",
+  },
+  {
+    title: "Basketball",
+    emoji: "🏀",
+    left: "70%",
+    top: "70%",
+  },
 ];
 
 export const BeyondCode = () => {

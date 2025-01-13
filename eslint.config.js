@@ -12,6 +12,7 @@ export default antfu({
     indent: 2,
     quotes: "double",
     semi: true,
+
   },
   // formatters: {
   //   css: true,

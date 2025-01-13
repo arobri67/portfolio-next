@@ -1,6 +1,8 @@
 import { IconMail } from "@tabler/icons-react";
 import React from "react";
 
+import { env } from "@/env/client";
+
 import { CopyEmail } from "./button-copy-email";
 import { Socials } from "./socials";
 
@@ -20,7 +22,7 @@ export const Contact = () => {
             </p>
             <div className="flex flex-row items-center gap-4">
               <Socials />
-              <CopyEmail email="hi@arnaudobri.me" />
+              <CopyEmail email={env.NEXT_PUBLIC_EMAIL} />
             </div>
 
           </div>

@@ -1,5 +1,7 @@
 import { IconBrandGithub, IconBrandLinkedin, IconBrandX } from "@tabler/icons-react";
 
+import { env } from "@/env/client";
+
 type SocialLink = {
   name: string;
   icon: React.ReactNode;
@@ -9,17 +11,17 @@ const SOCIALS: SocialLink[] = [
   {
     name: "Github",
     icon: <IconBrandGithub className="size-7" stroke={1.5} />,
-    path: "https://github.com/arobri67",
+    path: env.NEXT_PUBLIC_GITHUB_URL,
   },
   {
     name: "X (Twitter)",
     icon: <IconBrandX className="size-7" stroke={1.5} />,
-    path: "https://x.com/irboa67",
+    path: env.NEXT_PUBLIC_TWITTER_URL,
   },
   {
     name: "LinkedIn",
     icon: <IconBrandLinkedin className="size-7" stroke={1.5} />,
-    path: "https://www.linkedin.com/in/aobri/",
+    path: env.NEXT_PUBLIC_LINKEDIN_URL,
   },
 ];
 export const Socials = () => {
