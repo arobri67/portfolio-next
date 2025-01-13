@@ -1,5 +1,8 @@
 import type { NextConfig } from "next";
 
+import "@/env/server";
+import "@/env/client";
+
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
@@ -8,11 +11,6 @@ const nextConfig: NextConfig = {
         hostname: "utfs.io",
         port: "",
         pathname: "/a/uo6z56scs7/**",
-      },
-      {
-        protocol: "https",
-        hostname: "placehold.co",
-        pathname: "/600x400/**",
       },
     ],
   },

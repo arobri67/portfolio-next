@@ -1,11 +1,13 @@
 import { IconDownload } from "@tabler/icons-react";
 import Image from "next/image";
 
+import { env } from "@/env/client";
+
 import { Button } from "../ui";
 
 export const Intro = () => {
   const imgMe
-    = "https://utfs.io/a/uo6z56scs7/G8reinZKvneWZEg4GTQGqk4w39enRh7t6U2gl0cdSbzxIma8";
+    = env.NEXT_PUBLIC_IMG_ME;
 
   return (
     <section className="flex flex-col-reverse items-center gap-x-10 gap-y-4 pb-12 md:flex-row">
@@ -19,10 +21,12 @@ export const Intro = () => {
           research to software development. This enables me to craft robust
           solutions with research-driven methodology.
         </p>
-        <Button size="sm" variant="outline" className="uppercase">
-          <IconDownload className="size-4" />
-          <span className="text-xs font-semibold ">Download CV</span>
-        </Button>
+        <a href={env.NEXT_PUBLIC_CV_URL} target="_blank" rel="noopener noreferrer">
+          <Button size="sm" variant="outline" className="uppercase">
+            <IconDownload className="size-4" />
+            <span className="text-xs font-semibold ">Download CV</span>
+          </Button>
+        </a>
       </div>
       <div className="relative overflow-hidden rounded-3xl mix-blend-multiply dark:mix-blend-normal">
         <Image
