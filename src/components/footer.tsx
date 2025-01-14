@@ -2,11 +2,10 @@ import { Logo } from "./logo";
 
 export const Footer = () => {
   return (
-    <footer className="border-t border-border py-8">
+    <footer className="border-t border-border py-4">
       <div className="container max-w-3xl">
         <div className="md:flex md:items-center md:justify-between">
           <div className="order-2">
-
             <Logo />
           </div>
           <div className="mt-8 md:order-1 md:mt-0">

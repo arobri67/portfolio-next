@@ -1,9 +1,15 @@
+import type { Metadata } from "next";
+
 import Image from "next/image";
 
 import { CopyEmail } from "@/components/contact-app/button-copy-email";
 import { Socials } from "@/components/contact-app/socials";
 import { SectionSeparator } from "@/components/section-separator";
 import { Card } from "@/components/ui/card";
+
+export const metadata: Metadata = {
+  title: "Contact me",
+};
 
 export default function ContactPage() {
   return (

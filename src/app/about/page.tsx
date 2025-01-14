@@ -1,7 +1,13 @@
+import type { Metadata } from "next";
+
 import { AboutText } from "@/components/about-app/about-text";
 import { BeyondCode } from "@/components/about-app/beyond-code";
 import { Toolbox } from "@/components/about-app/toolbox";
 import { SectionSeparator } from "@/components/section-separator";
+
+export const metadata: Metadata = {
+  title: "About me",
+};
 
 export default function AboutPage() {
   return (

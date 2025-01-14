@@ -1,9 +1,15 @@
+import type { Metadata } from "next";
+
 import { IconArrowLeft } from "@tabler/icons-react";
 import Link from "next/link";
 
 import { ProjectList } from "@/components/projects-app/project-list";
 import { SectionSeparator } from "@/components/section-separator";
 import { getProjects } from "@/lib/projects";
+
+export const metadata: Metadata = {
+  title: "All my projects",
+};
 
 export default async function ProjectsPage() {
   const projects = await getProjects();

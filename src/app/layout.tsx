@@ -9,8 +9,14 @@ import { inter, josefinSans } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Arnaud's Personal Website",
+  title: {
+    default: "Arnaud's Personal Website - arnaudobri.com",
+    template: "%s - arnaudobri.com",
+  },
   description: "Welcome to my personal website",
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({

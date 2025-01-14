@@ -34,7 +34,7 @@ export default async function Project({
     <section className="pb-24 pt-32">
       <div className="container max-w-3xl">
         <Link
-          href="/"
+          href="/projects"
           className="mb-8 inline-flex items-center gap-2 text-sm font-light text-muted-foreground transition-colors hover:text-primary"
         >
           <IconArrowLeft className="size-5" />
