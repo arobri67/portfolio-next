@@ -6,6 +6,7 @@ import { CopyEmail } from "@/components/contact-app/button-copy-email";
 import { Socials } from "@/components/contact-app/socials";
 import { SectionSeparator } from "@/components/section-separator";
 import { Card } from "@/components/ui/card";
+import { env } from "@/env/client";
 
 export const metadata: Metadata = {
   title: "Contact me",
@@ -45,7 +46,7 @@ export default function ContactPage() {
             <p className="max-w-md text-muted-foreground">
               Feel free to reach out through any of these platforms. I'm always excited to discuss new opportunities and ideas!
             </p>
-            <CopyEmail email="hi@arnaudobri.me" />
+            <CopyEmail email={env.NEXT_PUBLIC_EMAIL} />
             <Socials />
           </div>
         </div>
