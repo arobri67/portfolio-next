@@ -29,7 +29,7 @@ export default function RootLayout({
       >
         <Providers>
           <Header />
-          <main className="grow">{children}</main>
+          <main className="relative grow">{children}</main>
           <Footer />
         </Providers>
       </body>
