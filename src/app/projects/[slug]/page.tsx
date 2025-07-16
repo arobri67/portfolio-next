@@ -4,7 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import MDXContent from "@/components/mdx-content";
-import { Badge } from "@/components/ui";
+import { Badge, Button } from "@/components/ui";
 import { getProjectBySlug, getProjects } from "@/lib/projects";
 import { formatDate } from "@/lib/utils";
 
@@ -57,13 +57,23 @@ export default async function Project({
             <h1 className="title">{title}</h1>
             <div className="flex items-center space-x-2">
               {production && (
-                <Link href={production} target="_blank" rel="noreferrer noopener">
-                  <IconLink className="size-7 rounded-full p-1 transition-colors hover:scale-110 hover:border hover:border-primary/20 hover:bg-primary hover:text-background" />
-                </Link>
+                <a href={production} target="_blank" rel="noreferrer noopener">
+                  <Button variant="ghost">
+                    <IconLink />
+                    <span>
+                      View Project
+                    </span>
+                  </Button>
+                </a>
               )}
               {github && (
                 <Link href={github} target="_blank" rel="noreferrer noopener">
-                  <IconBrandGithub className="size-7 rounded-full p-1 transition-colors hover:scale-110 hover:border hover:border-primary/20 hover:bg-primary hover:text-background" />
+                  <Button variant="ghost">
+                    <IconBrandGithub />
+                    <span>
+                      Github
+                    </span>
+                  </Button>
                 </Link>
               )}
             </div>
