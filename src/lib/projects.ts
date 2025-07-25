@@ -51,6 +51,7 @@ export const getProjects = async (
 
   const projects = files
     .map(file => getProjectMetadata(file))
+    .filter(project => project.published === true)
     .sort((a, b) => {
       if (new Date(a.publishedAt ?? "") < new Date(b.publishedAt ?? "")) {
         return 1;
