@@ -1,4 +1,4 @@
-import { IconBrandCss3, IconBrandFigma, IconBrandFramer, IconBrandGit, IconBrandHtml5, IconBrandJavascript, IconBrandMongodb, IconBrandNextjs, IconBrandReact, IconBrandTailwind, IconBrandTypescript, IconLetterE, IconLetterH } from "@tabler/icons-react";
+import { IconBrandCss3, IconBrandFigma, IconBrandFramer, IconBrandGit, IconBrandHtml5, IconBrandJavascript, IconBrandMongodb, IconBrandNextjs, IconBrandPython, IconBrandReact, IconBrandTailwind, IconBrandTypescript, IconDatabase, IconLetterE, IconLetterH } from "@tabler/icons-react";
 
 type Tool = {
   id: number;
@@ -9,11 +9,18 @@ type Tool = {
 const tools: Tool[] = [
   { id: 1, name: "Javascript", icon: <IconBrandJavascript className="size-8" stroke={1.5} /> },
   { id: 2, name: "Typescript", icon: <IconBrandTypescript className="size-8" stroke={1.5} /> },
+  { id: 2, name: "Typescript", icon: <IconBrandPython className="size-8" stroke={1.5} /> },
   { id: 3, name: "HTML5", icon: <IconBrandHtml5 className="size-8" stroke={1.5} /> },
   { id: 4, name: "CSS3", icon: <IconBrandCss3 className="size-8" stroke={1.5} /> },
   { id: 5, name: "React", icon: <IconBrandReact className="size-8" stroke={1.5} /> },
   { id: 6, name: "Next.js", icon: <IconBrandNextjs className="size-8" stroke={1.5} /> },
   { id: 7, name: "Tailwindcss", icon: <IconBrandTailwind className="size-8" stroke={1.5} /> },
+  { id: 8, name: "Postgres", icon: (
+    <IconDatabase
+      className="size-8"
+      stroke={1.5}
+    />
+  ) },
   { id: 8, name: "MongoDB", icon: <IconBrandMongodb className="size-8" stroke={1.5} /> },
   { id: 9, name: "ExpressJs", icon: <IconLetterE className="size-8" stroke={1.5} /> },
   { id: 10, name: "Hono", icon: <IconLetterH className="size-8" stroke={1.5} /> },
