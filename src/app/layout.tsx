@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     default: "Arnaud's Personal Website - arnaudobri.com",
     template: "%s - arnaudobri.com",
   },
-  description: "Welcome to my personal website",
+  description: "Welcome to personal website",
   twitter: {
     card: "summary_large_image",
   },
