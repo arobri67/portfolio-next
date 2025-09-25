@@ -8,16 +8,16 @@ export const AboutText = () => {
     <article className="mb-10 space-y-6">
       <p className="about-text">
         <HighlightedLetter letter="H" />
-        ello! I am Arnaud Obri. For the last
+        ello! I am Arnaud. For the last
         <HighlightText>10 years,</HighlightText>
         I have dedicated my time to
         <HighlightText>research in life sciences,</HighlightText>
-        which has led me to acquire multiple skills such as
+        which has led me to acquire multiple soft skills such as
         <HighlightText>
           data analysis, problem-solving, and adaptability
         </HighlightText>
         to new technologies. I&apos;m proud to have contributed to over
-        <a href={env.NEXT_PUBLIC_SCHOLAR_URL}><HighlightText>20 publications</HighlightText></a>
+        <a href={env.NEXT_PUBLIC_SCHOLAR_URL}><HighlightText>30 publications</HighlightText></a>
         in the scientific community and to have worked with brilliant minds in
         different institutions.
       </p>
@@ -26,7 +26,7 @@ export const AboutText = () => {
         <HighlightText>
           transitioning my career into software development.
         </HighlightText>
-        Back in the 2000s, when I was a student, I started learning HTML, CSS.
+        Back in the 2000s, when I was a student in biology, I started learning HTML, CSS.
         Today, I&apos;m rekindling that passion, constantly
 
         <HighlightText>learning and growing</HighlightText>

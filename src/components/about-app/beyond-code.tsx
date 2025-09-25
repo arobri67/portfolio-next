@@ -25,8 +25,8 @@ const HOBBIES = [
     top: "45%",
   },
   {
-    title: "NFL",
-    emoji: "🏈",
+    title: "Soccer",
+    emoji: "⚽",
     left: "65%",
     top: "40%",
   },
@@ -79,9 +79,9 @@ const HOBBIES = [
     top: "10%",
   },
   {
-    title: "Basketball",
-    emoji: "🏀",
-    left: "70%",
+    title: "MTG",
+    emoji: "🃏",
+    left: "30%",
     top: "70%",
   },
 ];
@@ -95,12 +95,13 @@ export const BeyondCode = () => {
         <motion.div
           key={hobby.title}
           className="absolute p-2"
-          style={{
+          initial={{
             left: `${hobby.left}`,
             top: `${hobby.top}`,
           }}
           drag
           dragConstraints={contraintRef}
+          dragElastic={0}
         >
           <Badge className="inline-flex cursor-pointer items-center gap-2 border border-foreground/40 bg-background px-2 py-1 text-base font-medium tracking-wider text-foreground/70 hover:border-muted hover:text-foreground">
             <span>{hobby.title}</span>
