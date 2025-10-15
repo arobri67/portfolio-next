@@ -33,7 +33,7 @@ export const CopyEmail = ({ email }: { email: string }) => {
             : "translate-y-full opacity-0"
         }`}
       >
-        <CheckIcon className="mr-2 size-4 text-destructive" />
+        <CheckIcon className="mr-2 size-4 text-green-500" />
         Copied!
       </span>
     </Button>
