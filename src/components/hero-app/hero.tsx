@@ -1,9 +1,6 @@
-import { IconDownload } from "@tabler/icons-react";
 import Image from "next/image";
 
 import { env } from "@/env/client";
-
-import { Button } from "../ui";
 
 export const Intro = () => {
   const imgMe
@@ -17,16 +14,14 @@ export const Intro = () => {
           Arnaud Obri.
         </h1>
         <p className="mb-4 mt-2 font-light text-muted-foreground">
-          From lab 🔬 to code 💻 - I&apos;ve transitioned from scientific
-          research to software development. This enables me to craft robust
-          solutions with research-driven methodology.
+          I'm Arnaud, a Software Engineer and Scientist leveraging rigorous analytical thinking to build robust, full-stack solutions. I am comfortable across the technology spectrum and always excited to master new tools to decode complex challenges.
         </p>
-        <a href={env.NEXT_PUBLIC_CV_URL} target="_blank" rel="noopener noreferrer">
+        {/* <a href="https://www.linkedin.com/in/aobri/" target="_blank" rel="noopener noreferrer">
           <Button size="sm" variant="outline" className="uppercase">
             <IconDownload className="size-4" />
-            <span className="text-xs font-semibold ">Download CV</span>
+            <span className="text-xs font-semibold ">View my CV</span>
           </Button>
-        </a>
+        </a> */}
       </div>
       <div className="relative overflow-hidden rounded-3xl mix-blend-multiply dark:mix-blend-normal">
         <Image
